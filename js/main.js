@@ -11,6 +11,7 @@ function debounce(func,wait,immediate){var timeout;return function(){var context
 NeoApp.controller("NewPage_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 1;
 $App.NAB.PageID = "NewPage";
+$scope.PushButton1_click = function() {window.document.location.reload();};
 });
 NeoApp.controller("NewDialog_Ctrl", function($scope,$rootScope,$modalInstance,$filter,$window) {
  $scope.CloseDialog = function() {
