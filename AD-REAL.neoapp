@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application>
+	<AppTitle>Untitled Application</AppTitle>
+	<AppShortName>MyApp</AppShortName>
+	<Author>Author name</Author>
+	<Version>1.0</Version>
+	<DesignDeviceName>Apple iPhone 6 Plus</DesignDeviceName>
+	<VariablesScanned>False</VariablesScanned>
+	<PageWidth>414</PageWidth>
+	<PageHeight>736</PageHeight>
+	<AutoSizeWidth>False</AutoSizeWidth>
+	<AutoSizeHeight>False</AutoSizeHeight>
+	<HideScrollbars>False</HideScrollbars>
+	<ResponsiveSize>False</ResponsiveSize>
+	<PublishPlatform>WebApp</PublishPlatform>
+	<EmptyBuildFolder>False</EmptyBuildFolder>
+	<AppIcon>C:\Users\User\Documents\VisualNeoWeb\Libraries\img\default-icon.png</AppIcon>
+	<LanguageCode>en</LanguageCode>
+	<DisplayMode>standalone</DisplayMode>
+	<ServiceWorker>OfflineCopyOfPages</ServiceWorker>
+	<ThemeColor>#000000</ThemeColor>
+	<PwaScope>/</PwaScope>
+	<MobileOSTypes>[AndroidOS,iOS,WindowsPhoneOS]</MobileOSTypes>
+	<WindowState>normal</WindowState>
+	<TitleBar>True</TitleBar>
+	<Sizeable>True</Sizeable>
+	<MaximizeBtn>False</MaximizeBtn>
+	<MinimizeBtn>True</MinimizeBtn>
+	<SystemMenu>True</SystemMenu>
+	<ContextMenu>False</ContextMenu>
+	<AlwaysOnTop>False</AlwaysOnTop>
+	<ShowInTaskbar>True</ShowInTaskbar>
+	<SingleInstance>False</SingleInstance>
+	<ChromeKioskMode>False</ChromeKioskMode>
+	<Components>
+		<FunctionList name="Subroutines"/>
+		<LibraryList name="Libraries"/>
+		<PageList name="Main">
+			<Components>
+				<Page id="NewPage">
+					<pageenter>GetItem &quot;status&quot; [status]
+GetItem &quot;List&quot; [list]</pageenter>
+					<Components>
+						<Image id="Image1">
+							<left>143px</left>
+							<top>63px</top>
+							<width>249px</width>
+							<height>59px</height>
+							<source>Villagers sml.jpg</source>
+						</Image>
+						<Headline id="Headline1">
+							<left>42px</left>
+							<top>14px</top>
+							<width>330px</width>
+							<height>105px</height>
+							<text>ADHD REAL THING V1.&lt;sup&gt;01&lt;/sup&gt;</text>
+						</Headline>
+						<Headline id="Headline2">
+							<left>48px</left>
+							<top>135px</top>
+							<width>315px</width>
+							<height>51px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:center</style>
+							<text>Until Final Publisg This is now&lt;br&gt; a contained Project</text>
+						</Headline>
+						<TextArea id="TextArea1">
+							<left>30px</left>
+							<top>174px</top>
+							<width>344px</width>
+							<height>126px</height>
+							<style>color:Blue</style>
+							<variable>status</variable>
+							<change>SetItem &quot;status&quot; [status]</change>
+						</TextArea>
+						<TextArea id="TextArea2">
+							<left>29px</left>
+							<top>308px</top>
+							<width>344px</width>
+							<height>413px</height>
+							<style>color:Blue</style>
+							<variable>list</variable>
+							<change>SetItem &quot;List&quot; [list]</change>
+						</TextArea>
+						<PushButton id="PushButton1">
+							<left>356px</left>
+							<top>13px</top>
+							<width>37px</width>
+							<height>33px</height>
+							<caption>R</caption>
+							<click>ReloadApp</click>
+						</PushButton>
+					</Components>
+				</Page>
+			</Components>
+		</PageList>
+		<PageList name="Master">
+			<Components>
+				<Page id="MasterPage"/>
+			</Components>
+		</PageList>
+		<PageList name="Dialog">
+			<Components>
+				<Page id="NewDialog">
+					<Components>
+						<DialogContainer id="DialogContainer1">
+							<left>0px</left>
+							<top>0px</top>
+							<width>414px</width>
+							<height>736px</height>
+							<close_button>False</close_button>
+							<kind>custom</kind>
+						</DialogContainer>
+					</Components>
+				</Page>
+			</Components>
+		</PageList>
+	</Components>
+</Application>
