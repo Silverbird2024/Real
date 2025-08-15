@@ -37,10 +37,17 @@
 		<LibraryList name="Libraries"/>
 		<PageList name="Main">
 			<Components>
-				<Page id="NewPage">
+				<Page id="Home">
 					<pageenter>GetItem &quot;status&quot; [status]
 GetItem &quot;List&quot; [list]</pageenter>
 					<Components>
+						<Headline id="Headline1">
+							<left>31px</left>
+							<top>11px</top>
+							<width>318px</width>
+							<height>105px</height>
+							<text>ADHD REAL THING V1.&lt;sup&gt;02&lt;/sup&gt;</text>
+						</Headline>
 						<Image id="Image1">
 							<left>143px</left>
 							<top>63px</top>
@@ -48,36 +55,20 @@ GetItem &quot;List&quot; [list]</pageenter>
 							<height>59px</height>
 							<source>Villagers sml.jpg</source>
 						</Image>
-						<Headline id="Headline1">
-							<left>42px</left>
-							<top>14px</top>
-							<width>330px</width>
-							<height>105px</height>
-							<text>ADHD REAL THING V1.&lt;sup&gt;01&lt;/sup&gt;</text>
-						</Headline>
 						<Headline id="Headline2">
-							<left>48px</left>
-							<top>135px</top>
+							<left>50px</left>
+							<top>130px</top>
 							<width>315px</width>
-							<height>51px</height>
+							<height>29px</height>
 							<style>color:blue;font-size:11pt;font-weight:800;text-align:center</style>
-							<text>Until Final Publisg This is now&lt;br&gt; a contained Project</text>
+							<text>Over view</text>
 						</Headline>
-						<TextArea id="TextArea1">
-							<left>30px</left>
-							<top>174px</top>
-							<width>344px</width>
-							<height>126px</height>
-							<style>color:Blue</style>
-							<variable>status</variable>
-							<change>SetItem &quot;status&quot; [status]</change>
-						</TextArea>
 						<TextArea id="TextArea2">
-							<left>29px</left>
-							<top>308px</top>
-							<width>344px</width>
-							<height>413px</height>
-							<style>color:Blue</style>
+							<left>32px</left>
+							<top>317px</top>
+							<width>345px</width>
+							<height>219px</height>
+							<style>color:Blue;font-style:italic;font-weight:600</style>
 							<variable>list</variable>
 							<change>SetItem &quot;List&quot; [list]</change>
 						</TextArea>
@@ -86,8 +77,261 @@ GetItem &quot;List&quot; [list]</pageenter>
 							<top>13px</top>
 							<width>37px</width>
 							<height>33px</height>
+							<style>opacity:0.45</style>
 							<caption>R</caption>
 							<click>ReloadApp</click>
+						</PushButton>
+						<Headline id="Headline3">
+							<left>42px</left>
+							<top>292px</top>
+							<width>119px</width>
+							<height>23px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:left</style>
+							<text>Steps:</text>
+						</Headline>
+						<TextArea id="TextArea1">
+							<left>31px</left>
+							<top>151px</top>
+							<width>344px</width>
+							<height>137px</height>
+							<style>color:Blue;font-size:9pt;font-weight:600</style>
+							<variable>status</variable>
+							<change>SetItem &quot;status&quot; [status]</change>
+						</TextArea>
+						<Headline id="Headline4">
+							<left>41px</left>
+							<top>551px</top>
+							<width>119px</width>
+							<height>23px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:left</style>
+							<text>Apps:</text>
+						</Headline>
+						<TextArea id="TextArea3">
+							<left>31px</left>
+							<top>576px</top>
+							<width>345px</width>
+							<height>254px</height>
+							<style>color:Blue;font-style:italic;font-weight:600</style>
+							<variable>apps</variable>
+							<change>SetItem &quot;apps&quot; [apps]</change>
+						</TextArea>
+						<Headline id="Headline5">
+							<left>44px</left>
+							<top>849px</top>
+							<width>119px</width>
+							<height>23px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:left</style>
+							<text>G/Number Ideas:</text>
+						</Headline>
+						<TextArea id="TextArea4">
+							<left>34px</left>
+							<top>874px</top>
+							<width>345px</width>
+							<height>254px</height>
+							<style>color:Blue;font-style:italic;font-weight:600</style>
+							<variable>Gidas</variable>
+							<change>SetItem &quot;Gidas&quot; [Gidas]</change>
+						</TextArea>
+						<PushButton id="PushButton3">
+							<left>26px</left>
+							<top>118px</top>
+							<width>54px</width>
+							<height>30px</height>
+							<style>opacity:0.52</style>
+							<caption>GN</caption>
+							<click>GetItem &quot;Gn&quot; [Gn]
+GetItem &quot;Diary&quot; [Diary]
+GetItem &quot;Notes&quot; [Notes]
+
+GotoPage &quot;Page2&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton6">
+							<left>83px</left>
+							<top>118px</top>
+							<width>58px</width>
+							<height>30px</height>
+							<style>opacity:0.52</style>
+							<caption>notes</caption>
+							<click>GetItem &quot;Gn&quot; [Gn]
+GetItem &quot;Diary&quot; [Diary]
+GetItem &quot;Notes&quot; [Notes]
+
+GotoPage &quot;Notes&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton7">
+							<left>84px</left>
+							<top>87px</top>
+							<width>58px</width>
+							<height>30px</height>
+							<style>opacity:0.52</style>
+							<caption>Diary</caption>
+							<click>GetItem &quot;Gn&quot; [Gn]
+GetItem &quot;Diary&quot; [Diary]
+GetItem &quot;Notes&quot; [Notes]
+
+GotoPage &quot;Diary&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="Page2">
+					<pageenter>GetItem &quot;status&quot; [status]
+GetItem &quot;List&quot; [list]</pageenter>
+					<Components>
+						<Image id="Image2">
+							<left>143px</left>
+							<top>63px</top>
+							<width>249px</width>
+							<height>59px</height>
+							<source>Villagers sml.jpg</source>
+						</Image>
+						<Headline id="Headline6">
+							<left>42px</left>
+							<top>14px</top>
+							<width>330px</width>
+							<height>105px</height>
+							<text>ADHD REAL THING V1.&lt;sup&gt;01&lt;/sup&gt;</text>
+						</Headline>
+						<Headline id="Headline7">
+							<left>50px</left>
+							<top>129px</top>
+							<width>315px</width>
+							<height>29px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:center</style>
+							<text>G Numbers</text>
+						</Headline>
+						<TextArea id="TextArea6">
+							<left>31px</left>
+							<top>149px</top>
+							<width>344px</width>
+							<height>793px</height>
+							<style>color:Blue</style>
+							<variable>Gn</variable>
+							<change>SetItem &quot;Gn&quot; [Gn]</change>
+						</TextArea>
+						<TextArea id="TextArea8">
+							<left>34px</left>
+							<top>874px</top>
+							<width>345px</width>
+							<height>254px</height>
+							<style>color:Blue;font-style:italic;font-weight:600</style>
+							<variable>Gidas</variable>
+							<change>SetItem &quot;Gidas&quot; [Gidas]</change>
+						</TextArea>
+						<PushButton id="PushButton2">
+							<left>341px</left>
+							<top>17px</top>
+							<width>54px</width>
+							<height>34px</height>
+							<caption>H</caption>
+							<click>GotoPage &quot;Home&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="Notes">
+					<pageenter>GetItem &quot;status&quot; [status]
+GetItem &quot;List&quot; [list]</pageenter>
+					<Components>
+						<Image id="Image3">
+							<left>143px</left>
+							<top>63px</top>
+							<width>249px</width>
+							<height>59px</height>
+							<source>Villagers sml.jpg</source>
+						</Image>
+						<Headline id="Headline8">
+							<left>42px</left>
+							<top>14px</top>
+							<width>330px</width>
+							<height>105px</height>
+							<text>ADHD REAL THING V1.&lt;sup&gt;01&lt;/sup&gt;</text>
+						</Headline>
+						<Headline id="Headline9">
+							<left>50px</left>
+							<top>129px</top>
+							<width>315px</width>
+							<height>29px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:center</style>
+							<text>Notes:</text>
+						</Headline>
+						<TextArea id="TextArea5">
+							<left>31px</left>
+							<top>149px</top>
+							<width>344px</width>
+							<height>793px</height>
+							<style>color:Blue</style>
+							<variable>Notes</variable>
+							<change>SetItem &quot;Notes&quot; [Notes]</change>
+						</TextArea>
+						<TextArea id="TextArea7">
+							<left>34px</left>
+							<top>874px</top>
+							<width>345px</width>
+							<height>254px</height>
+							<style>color:Blue;font-style:italic;font-weight:600</style>
+							<variable>Gidas</variable>
+							<change>SetItem &quot;Gidas&quot; [Gidas]</change>
+						</TextArea>
+						<PushButton id="PushButton4">
+							<left>341px</left>
+							<top>17px</top>
+							<width>54px</width>
+							<height>34px</height>
+							<caption>H</caption>
+							<click>GotoPage &quot;Home&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="Diary">
+					<pageenter>GetItem &quot;status&quot; [status]
+GetItem &quot;List&quot; [list]</pageenter>
+					<Components>
+						<Image id="Image4">
+							<left>143px</left>
+							<top>63px</top>
+							<width>249px</width>
+							<height>59px</height>
+							<source>Villagers sml.jpg</source>
+						</Image>
+						<Headline id="Headline10">
+							<left>42px</left>
+							<top>14px</top>
+							<width>330px</width>
+							<height>105px</height>
+							<text>ADHD REAL THING V1.&lt;sup&gt;01&lt;/sup&gt;</text>
+						</Headline>
+						<Headline id="Headline11">
+							<left>50px</left>
+							<top>129px</top>
+							<width>315px</width>
+							<height>29px</height>
+							<style>color:blue;font-size:11pt;font-weight:800;text-align:center</style>
+							<text>Diary:</text>
+						</Headline>
+						<TextArea id="TextArea9">
+							<left>31px</left>
+							<top>149px</top>
+							<width>344px</width>
+							<height>793px</height>
+							<style>color:Blue</style>
+							<variable>Diary</variable>
+							<change>SetItem &quot;Diary&quot; [Diary]</change>
+						</TextArea>
+						<TextArea id="TextArea10">
+							<left>34px</left>
+							<top>874px</top>
+							<width>345px</width>
+							<height>254px</height>
+							<style>color:Blue;font-style:italic;font-weight:600</style>
+							<variable>Gidas</variable>
+							<change>SetItem &quot;Gidas&quot; [Gidas]</change>
+						</TextArea>
+						<PushButton id="PushButton5">
+							<left>341px</left>
+							<top>17px</top>
+							<width>54px</width>
+							<height>34px</height>
+							<caption>H</caption>
+							<click>GotoPage &quot;Home&quot;</click>
 						</PushButton>
 					</Components>
 				</Page>
