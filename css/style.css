@@ -48,9 +48,10 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #Headline15 {position:absolute;left:12px;top:34px;width:323px;height:53px;margin:0;color:#A0522D;font-family:Times New Roman,Times,serif;font-size:16pt;font-weight:600}
 #T002 {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF}
 #Image7 {position:absolute;left:-3px;top:-2px;width:417px;height:737px;margin:0;}
-#Headline16 {position:absolute;left:8px;top:3px;width:394px;height:728px;margin:0;color:#A0522D;font-family:Times New Roman,Times,serif;font-size:9pt}
+#Headline16 {position:absolute;left:8px;top:59px;width:394px;height:678px;margin:0;color:#A0522D;font-family:Times New Roman,Times,serif;font-size:9pt}
+#Image8 {position:absolute;left:4px;top:66px;width:405px;height:621px;margin:0;}
+#Headline17 {position:absolute;left:14px;top:6px;width:317px;height:58px;margin:0;font-size:12pt}
 #PushButton12 {position:absolute;left:341px;top:9px;width:54px;height:34px;margin:0;color:#A0522D;background-color:#D2B48C}
-#Image8 {position:absolute;left:4px;top:52px;width:405px;height:621px;margin:0;}
 #Diary {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF}
 #Image4 {position:absolute;left:143px;top:63px;width:249px;height:59px;margin:0;}
 #Headline10 {position:absolute;left:42px;top:14px;width:330px;height:105px;margin:0;}

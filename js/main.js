@@ -91,9 +91,9 @@ $App.NAB.PageNumber = 6;
 $App.NAB.PageID = "T002";
 $scope.Headline16_click = function() {$scope.HideObject("Headline16","none",77);
 $scope.ShowObject("Image8","fadeIn",77);};
-$scope.PushButton12_click = function() {$scope.GotoPage( "Home" );};
 $scope.Image8_click = function() {$scope.HideObject("Image8","none",77);
 $scope.ShowObject("Headline16","none",77);};
+$scope.PushButton12_click = function() {$scope.GotoPage( "Home" );};
 });
 NeoApp.controller("Diary_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 7;
